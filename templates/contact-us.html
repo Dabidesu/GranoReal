@@ -26,9 +26,24 @@
   <link href="/static/css/main.css" rel="stylesheet">
 
   <script type="text/javascript">
-    $(window).on('load', function() {
-        $('#myModal').modal('show');
-    });
+    const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => alert("Thank you for your submission"))
+      .catch((error) => alert(error));
+    };
+
+    document
+      .querySelector("form")
+      .addEventListener("submit", handleSubmit);
   </script>
 </head>
 
@@ -78,7 +93,7 @@
         <br><br><br><div class="col-md-6 ml-1 py-5"><br><br><br>
           <div class="box" data-aos="flip-left">
             <h3 class="heading">Contact Us!</h3>
-            <form class="mb-5" method="post" id="contactForm" name="contactForm" netlify>
+            <form class="mb-5" method="POST" id="contactForm" name="contactForm" data-netlify="true">
               <div class="row">
                 
                 <div class="col-md-6 form-group">
