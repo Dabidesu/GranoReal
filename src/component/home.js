@@ -6,9 +6,11 @@ import ReactDOM from 'react-dom';
 
 
 function Home (){ 
-    const container = document.getElementById('root');
-    const root = ReactDOM.createRoot(container);
-    return ReactDOM.render(process.env.PUBLIC_URL, document.getElementById('root'));
+    ReactDOM.render(
+        <Provider store={store}>
+        <App />
+        </Provider>
+      , document.getElementById('root'));
 } 
   
 export default Home;
