@@ -63,9 +63,6 @@ footer {
     margin-bottom: 60px;
   }
 
-  .carousel-caption {
-    z-index: 1;
-  }
   
   .carousel-item {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; 

@@ -26,7 +26,7 @@
 
 
 import React, { Component } from 'react'; 
-import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'; 
+import { BrowserRouter as Router,Routes, Route, Navigate } from 'react-router-dom'; 
 // import Link from 'react-router-dom'; 
 import Home from './component/home'; 
 import About from './component/about'; 
@@ -43,6 +43,7 @@ render() {
                 <Route exact path='/about' element={< About />}></Route> 
                 <Route exact path='/contact-us' element={< Contact />}></Route> 
                 <Route exact path='/contact-us/' element={< Contact />}></Route> 
+                <Route path='*' element={<Navigate to='/' />} />
         </Routes> 
     </Router> 
 ); 
