@@ -200,3 +200,13 @@ body {
       pointer-events: none;
       cursor: default;
    }
+
+   .alert-fixed{
+    z-index: 50000;
+    position: fixed;
+    width: 100%;
+    height:50px;
+    left:50%;
+    transform:translateX(-50%);
+    top:10px;
+  }
