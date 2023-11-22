@@ -195,3 +195,8 @@ body {
     font-size: 12px;
     color: #000; }
   
+
+    .inactiveLink {
+      pointer-events: none;
+      cursor: default;
+   }

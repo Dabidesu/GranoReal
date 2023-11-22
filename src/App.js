@@ -26,7 +26,8 @@
 
 
 import React, { Component } from 'react'; 
-import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom'; 
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'; 
+// import Link from 'react-router-dom'; 
 import Home from './component/home'; 
 import About from './component/about'; 
 import Contact from './component/contact'; 
@@ -37,6 +38,7 @@ render() {
     return ( 
     <Router> 
         <Routes> 
+                <Route exact path='/GranoReal' element={< Home />}></Route> 
                 <Route exact path='/' element={< Home />}></Route> 
                 <Route exact path='/about' element={< About />}></Route> 
                 <Route exact path='/contact-us' element={< Contact />}></Route> 
