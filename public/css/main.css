@@ -450,14 +450,15 @@ section {
   }
 
   .mobile-nav-show {
-    position: relative;
+    position: absolute;
+    right:15px;
     color: #fff;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
     transition: 0.5s;
     z-index: 9999;
-    padding-right: 10px;
+    top:20px;
   }
 
   .mobile-nav-hide {
@@ -2453,10 +2454,8 @@ section {
   background: url("../img/bg/footer-bg.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
-  position: absolute;
-  padding-top: 2%;
-  bottom: 0;
-  width: 100%;
+  padding: 50px 0 40px 0;
+  position: relative;
 
 }
 
@@ -2564,4 +2563,9 @@ section {
 
 .disabled{
   pointer-events:none;
+}
+
+.navbar-toggler-icon {
+  right: 15px;
+  position: absolute;
 }

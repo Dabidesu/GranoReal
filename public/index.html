@@ -11,8 +11,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <link href="public/img/logo.png" rel="icon">
-  <link href="public/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="%PUBLIC_URL%/img/logo.png" rel="icon">
+  <link href="%PUBLIC_URL%/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +23,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.3/swiper-bundle.css" integrity="sha512-8L/PDtOcxXEvVD1mWAzCBco7FQ/AHyG/bhg7yQpekicDmRwZA/iNDKpn+MJkYNEVg+qSLkxWLjsHtK781oAaWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  <link rel="stylesheet" href="public/css/styles.css">
-  <link rel="stylesheet" href="public/css/main.css" >
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/styles.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/main.css" >
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
 </head>
@@ -42,7 +42,7 @@
   <header id="header" class="header d-flex align-items-center">
     <div id="app" class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="/home" class="logo d-flex align-items-center">
-        <img class="px-2" width="50" height="50" src="public/img/logo.png" alt="Grano Real"><img width="125" src="public/img/asd.png">
+        <img class="px-2" width="50" height="50" src="%PUBLIC_URL%/img/logo.png" alt="Grano Real"><img width="125" src="%PUBLIC_URL%/img/asd.png">
       </a>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -51,7 +51,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/products">Products</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdownzxcasd</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#"><span>Dropdownzxc</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -70,18 +70,152 @@
   </header>
   <!-- Header End-->
 
-  <div class="p-5 shadow-lg" style="background-color:#123524"></div>
-
   
 
+  <section id="hero" class="hero">
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">Testo,<span> Sorry!</span></h2>
+            <p data-aos="fade-up">IndexLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn btn-success btn-get-started rounded" data-mdb-ripple-color="dark">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-item active" style="background-image: url(%PUBLIC_URL%/img/bg/stocka.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(%PUBLIC_URL%/img/bg/testa.png)"></div>
+      <div class="carousel-item" style="background-image: url(%PUBLIC_URL%/img/bg/testb.png)"></div>
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
 
   <main id="main">
-asd
+    <section id="constructions" class="constructions">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Overview</h2>
+          <p>Here are some of our products yada yada yada yada yada</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url(%PUBLIC_URL%/img/products/microbar.png);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">microbar hd</h4>
+                    <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url(%PUBLIC_URL%/img/products/cat2.png);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">cat2</h4>
+                    <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url(%PUBLIC_URL%/img/products/microhex.png);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">microhex</h4>
+                    <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url(%PUBLIC_URL%/img/products/microgad.png);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">microgad xd</h4>
+                    <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+        <section id="services" class="services section-bg">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-header">
+              <h2>Services</h2>
+              <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
+            </div>
+    
+            <div class="row gy-4">
+    
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item  position-relative">
+                  <div class="icon">
+                    <i class="fa-solid fa-mountain-city"></i>
+                  </div>
+                  <h3>Nesciunt Mete</h3>
+                  <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                  <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-item position-relative">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                  </div>
+                  <h3>Eosle Commodi</h3>
+                  <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                  <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+    
+    
+          </div>
+        </section>
+    
+
   </main>
-
-
   <!-- Footer Start -->
   <footer id="footer" class="footer">
     <div class="footer-content position-relative">
@@ -89,7 +223,7 @@ asd
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <img width="175" src="public/img/logotext-black.png" alt="Grano Real"><br><br>
+              <img width="175" src="%PUBLIC_URL%/img/logotext-black.png" alt="Grano Real"><br><br>
               <p>
                 Kawit, Cavite, PH <br><br>
                 <strong class="text-success">☏:</strong> (+63) 123 4567 890<br>
@@ -163,13 +297,13 @@ asd
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.3/swiper-bundle.min.js" integrity="sha512-ILrDRgEiIojcsKyBy12ZU7MtOf78F2fj3vve/AN5i94iXLQ8PZN7IJYPphmAGdwZmTv4N+OzY3trvqGIEY87VA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
   <!-- To Fix -->
-  <script src="public/assets/vendor/php-email-form/validate.js"></script>
+  <script src="%PUBLIC_URL%/assets/vendor/php-email-form/validate.js"></script>
   
   
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="public/main.js"></script>
+  <script src="%PUBLIC_URL%/main.js"></script>
   <script src="./bundle.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bundle-js@1.0.3/bundler.min.js"></script>
 
