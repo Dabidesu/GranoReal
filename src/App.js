@@ -41,6 +41,7 @@ render() {
         <Routes> 
                 <Route exact path='/GranoReal' element={< Home />}></Route> 
                 <Route exact path='/' element={< Home />}></Route> 
+                <Route exact path='/home' element={< Home />}></Route> 
                 <Route exact path='/about' element={< About />}></Route> 
                 <Route exact path='/contact-us' element={< Contact />}></Route> 
                 {/* <Route exact path='/contact-us/' element={< Contact />}></Route> 
