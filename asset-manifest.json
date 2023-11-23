@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GranoReal/static/css/main.f855e6bc.css",
+    "main.js": "/GranoReal/static/js/main.0002919b.js",
+    "static/js/787.0b0e85c3.chunk.js": "/GranoReal/static/js/787.0b0e85c3.chunk.js",
+    "index.html": "/GranoReal/index.html",
+    "main.f855e6bc.css.map": "/GranoReal/static/css/main.f855e6bc.css.map",
+    "main.0002919b.js.map": "/GranoReal/static/js/main.0002919b.js.map",
+    "787.0b0e85c3.chunk.js.map": "/GranoReal/static/js/787.0b0e85c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.0002919b.js"
+  ]
+}
