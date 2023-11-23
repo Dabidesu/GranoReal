@@ -58,12 +58,10 @@ footer {
     background-color: #45A748;
 }
 
-  
   .carousel { /* To remove for that space */
     margin-bottom: 60px;
   }
 
-  
   .carousel-item {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; 
     filter: alpha(opacity=70);                                         
@@ -76,7 +74,6 @@ footer {
     background: red;
     color: white;
 }
-
 
 /* Contact Form */
 body {
