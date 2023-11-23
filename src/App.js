@@ -26,7 +26,8 @@
 
 
 import React, { Component } from 'react'; 
-import { BrowserRouter as Router,Routes, Route, Navigate } from 'react-router-dom'; 
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'; 
+// import Navigate from 'react-router-dom'; 
 // import Link from 'react-router-dom'; 
 import Home from './component/home'; 
 import About from './component/about'; 
