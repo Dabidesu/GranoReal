@@ -43,7 +43,8 @@ render() {
                 <Route exact path='/about' element={< About />}></Route> 
                 <Route exact path='/contact-us' element={< Contact />}></Route> 
                 <Route exact path='/contact-us/' element={< Contact />}></Route> 
-                <Route path='*' element={<Navigate to='/' />} />
+                <Route path='/contact-us/' element={<Navigate to='/contact-us' />}></Route> 
+                <Route path='*' element={<Navigate to='/' />}></Route> 
         </Routes> 
     </Router> 
 ); 
